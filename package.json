@@ -1,0 +1,25 @@
+{
+  "name": "real_time_messaging_socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navsingh3211/real_time_messaging_socket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navsingh3211/real_time_messaging_socket/issues"
+  },
+  "homepage": "https://github.com/navsingh3211/real_time_messaging_socket#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
+}
