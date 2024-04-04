@@ -25,6 +25,14 @@
     socket.on('chatMessage',(message)=>{
       const p = document.createElement("li");
       p.innerHTML = message;
+      p.style.padding = "10px";
+      p.style.marginBottom = "10px";
+      p.style.backgroundColor = "#f0f0f0";
+      p.style.borderRadius = "10px";
+      p.style.maxWidth = "70%";
+      p.style.wordWrap = "break-word";
+      p.style.listStyleType = "none";
+      p.style.textAlign = "left";
       allMessages.appendChild(p);
       window.scrollTo(0, document.body.scrollHeight);
     });
@@ -33,6 +41,7 @@
       const message = messageInput.value;
       // console.log(message);
       socket.emit('user-message',message);
+      messageInput.value = ""; 
     })
 
   </script>
